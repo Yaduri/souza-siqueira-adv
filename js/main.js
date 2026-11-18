@@ -94,6 +94,23 @@
   };
 
   /**
+   * Cria ícone vetorial oficial do WhatsApp via referência ao sprite #icon-whatsapp
+   */
+  function createWhatsAppIcon() {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('class', 'icon icon-whatsapp');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'currentColor');
+    svg.setAttribute('aria-hidden', 'true');
+
+    const use = document.createElementNS(svgNS, 'use');
+    use.setAttribute('href', '#icon-whatsapp');
+    svg.appendChild(use);
+    return svg;
+  }
+
+  /**
    * Remove acentos e normaliza texto para filtragem
    */
   function normalizeText(value) {
@@ -481,7 +498,16 @@
           pdfLink.target = '_blank';
           pdfLink.rel = 'noopener noreferrer';
           pdfLink.className = 'btn btn--primary btn--sm';
-          pdfLink.textContent = 'Abrir Artigo Completo (PDF)';
+
+          const pdfIcon = document.createElement('i');
+          pdfIcon.setAttribute('data-lucide', 'file-text');
+          pdfIcon.className = 'icon';
+          pdfIcon.setAttribute('aria-hidden', 'true');
+          pdfLink.appendChild(pdfIcon);
+
+          const pdfText = document.createElement('span');
+          pdfText.textContent = 'Abrir Artigo Completo (PDF)';
+          pdfLink.appendChild(pdfText);
           modalFooter.appendChild(pdfLink);
         }
 
@@ -491,8 +517,16 @@
         waLink.target = '_blank';
         waLink.rel = 'noopener noreferrer';
         waLink.className = data.pdfUrl ? 'btn btn--secondary btn--sm' : 'btn btn--primary btn--sm';
-        waLink.textContent = 'Consultar sobre este tema via WhatsApp';
+        waLink.appendChild(createWhatsAppIcon());
+
+        const waText = document.createElement('span');
+        waText.textContent = 'Consultar sobre este tema via WhatsApp';
+        waLink.appendChild(waText);
         modalFooter.appendChild(waLink);
+
+        if (window.lucide) {
+          window.lucide.createIcons({ nodes: [modalFooter] });
+        }
       }
 
       if (typeof modal.showModal === 'function') {
@@ -691,6 +725,9 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
     initOfficeStatus();
     initNavigation();
     initOfficeGallery();

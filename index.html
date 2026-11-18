@@ -68,16 +68,20 @@
   </script>
 </head>
 <body>
+  <!-- Sprite vetorial oficial do WhatsApp -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </symbol>
+  </svg>
+
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
   <!-- Barra Institucional Superior -->
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__location">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5a7 7 0 1 1 14 0C19 14.9 12 21 12 21Z"/>
-          <circle cx="12" cy="9.5" r="2.2"/>
-        </svg>
+        <i data-lucide="map-pin" class="icon" aria-hidden="true"></i>
         <span>Condomínio Edifício New York Trade Center · R. Santa Clara, 673 - Centro, Bragança Paulista - SP</span>
       </div>
 
@@ -89,24 +93,17 @@
 
         <div class="topbar__links">
           <a href="tel:+551140339279" class="topbar__link">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102A1.125 1.125 0 0 0 5.872 2.25H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
-            </svg>
+            <i data-lucide="phone" class="icon" aria-hidden="true"></i>
             <span>(11) 4033-9279</span>
           </a>
-          <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Souza%20Siqueira%20Sociedade%20de%20Advogados%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento." target="_blank" rel="noopener noreferrer" class="topbar__link">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.5a8.5 8.5 0 0 1-12.56 7.46L3.5 20.5l1.58-4.29A8.5 8.5 0 1 1 20.5 11.5Z"/>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.3 8.9c.2-.4.45-.4.66-.4.17 0 .36 0 .52.38.19.44.63 1.54.69 1.65.06.11.09.24.02.38-.08.15-.12.24-.24.37-.12.13-.25.29-.35.39-.12.11-.24.24-.1.47.14.23.62 1.02 1.33 1.65.91.81 1.68 1.06 1.91 1.18.23.11.37.1.5-.06.14-.16.58-.68.74-.91.15-.23.31-.19.52-.11.21.08 1.35.64 1.58.75.23.12.39.18.45.27.06.1.06.56-.14 1.1-.19.54-1.12 1.04-1.56 1.1-.4.06-.91.09-1.47-.09-.34-.11-.78-.25-1.35-.5-2.37-1.02-3.92-3.41-4.04-3.57-.12-.16-.96-1.28-.96-2.44 0-1.16.6-1.73.82-1.97Z"/>
+          <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Souza%20Siqueira%20Sociedade%20de%20Advogados%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento." target="_blank" rel="noopener noreferrer" class="topbar__link topbar__link--whatsapp">
+            <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <use href="#icon-whatsapp"></use>
             </svg>
             <span>(11) 93713-7822</span>
           </a>
           <a href="https://www.instagram.com/souzasiqueiraadvogados/" target="_blank" rel="noopener noreferrer" class="topbar__link" aria-label="Instagram oficial @souzasiqueiraadvogados">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
-            </svg>
+            <i data-lucide="instagram" class="icon" aria-hidden="true"></i>
             <span>@souzasiqueiraadvogados</span>
           </a>
         </div>
@@ -134,19 +131,15 @@
 
       <div class="site-header__actions">
         <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Souza%20Siqueira%20Sociedade%20de%20Advogados%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm header-cta">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.5a8.5 8.5 0 0 1-12.56 7.46L3.5 20.5l1.58-4.29A8.5 8.5 0 1 1 20.5 11.5Z"/>
+          <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <use href="#icon-whatsapp"></use>
           </svg>
           <span>Atendimento via WhatsApp</span>
         </a>
 
         <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu de navegação">
-          <svg class="icon icon--menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-          </svg>
-          <svg class="icon icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
-          </svg>
+          <i data-lucide="menu" class="icon icon--menu" aria-hidden="true"></i>
+          <i data-lucide="x" class="icon icon--close" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -163,9 +156,13 @@
         </ul>
         <div class="mobile-nav__cta">
           <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Souza%20Siqueira%20Sociedade%20de%20Advogados%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full">
+            <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <use href="#icon-whatsapp"></use>
+            </svg>
             <span>Falar pelo WhatsApp (11) 93713-7822</span>
           </a>
           <a href="tel:+551140339279" class="btn btn--outline btn--full">
+            <i data-lucide="phone" class="icon" aria-hidden="true"></i>
             <span>Ligar para (11) 4033-9279</span>
           </a>
         </div>
@@ -187,16 +184,14 @@
 
           <div class="hero__actions">
             <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Souza%20Siqueira%20Sociedade%20de%20Advogados." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.5a8.5 8.5 0 0 1-12.56 7.46L3.5 20.5l1.58-4.29A8.5 8.5 0 1 1 20.5 11.5Z"/>
+              <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <use href="#icon-whatsapp"></use>
               </svg>
               <span>Falar com um Advogado no WhatsApp</span>
             </a>
             <a href="#areas-de-atuacao" class="btn btn--secondary">
               <span>Conhecer Áreas de Atuação</span>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-              </svg>
+              <i data-lucide="arrow-right" class="icon" aria-hidden="true"></i>
             </a>
           </div>
 
@@ -361,10 +356,7 @@
           <div class="dossier-search">
             <label for="area-search" class="dossier-search__label">Buscar especialidade ou serviço</label>
             <div class="dossier-search__control">
-              <svg class="icon dossier-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <circle cx="11" cy="11" r="7.5"/>
-                <path stroke-linecap="round" d="m20 20-3.8-3.8"/>
-              </svg>
+              <i data-lucide="search" class="icon dossier-search__icon" aria-hidden="true"></i>
               <input
                 type="search"
                 id="area-search"
@@ -395,17 +387,13 @@
               aria-controls="panel-tributario"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M4.5 17.25h15M6 17.25V9.75m4 7.5V9.75m4 7.5V9.75m4 7.5V9.75M3.75 9.75l8.25-5.25 8.25 5.25H3.75Z"/>
-                </svg>
+                <i data-lucide="landmark" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Tributário</span>
                 <span class="dossier-tab__sub">Planejamento fiscal e contencioso</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -439,6 +427,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Tribut%C3%A1rio." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Tributário via WhatsApp</span>
                 </a>
               </div>
@@ -455,17 +446,13 @@
               aria-controls="panel-empresarial"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/>
-                </svg>
+                <i data-lucide="building-2" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Empresarial e Societário</span>
                 <span class="dossier-tab__sub">Contratos, sociedades e reestruturação</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -500,6 +487,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Empresarial%20e%20Societ%C3%A1rio." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Empresarial via WhatsApp</span>
                 </a>
               </div>
@@ -516,17 +506,13 @@
               aria-controls="panel-trabalho"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0"/>
-                </svg>
+                <i data-lucide="briefcase" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito do Trabalho</span>
                 <span class="dossier-tab__sub">Auditoria de RH e contencioso</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -561,6 +547,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20do%20Trabalho." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito do Trabalho via WhatsApp</span>
                 </a>
               </div>
@@ -577,17 +566,13 @@
               aria-controls="panel-civil"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m-7.5-5.25h15M5.25 7.5h13.5M6.75 7.5 4.5 13.5h4.5L6.75 7.5Zm10.5 0L15 13.5h4.5l-2.25-6Z"/>
-                </svg>
+                <i data-lucide="scale" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Civil, Família e Sucessões</span>
                 <span class="dossier-tab__sub">Patrimônio, contratos e família</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -622,6 +607,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Civil%2C%20Fam%C3%ADlia%20ou%20Sucess%C3%B5es." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Civil via WhatsApp</span>
                 </a>
               </div>
@@ -638,17 +626,13 @@
               aria-controls="panel-eleitoral"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
-                </svg>
+                <i data-lucide="shield-check" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Eleitoral e Partidário</span>
                 <span class="dossier-tab__sub">Campanhas, mandatos e vida partidária</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -683,6 +667,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Eleitoral%20e%20Partid%C3%A1rio." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Eleitoral via WhatsApp</span>
                 </a>
               </div>
@@ -699,17 +686,13 @@
               aria-controls="panel-desportivo"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"/>
-                </svg>
+                <i data-lucide="trophy" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Desportivo</span>
                 <span class="dossier-tab__sub">Clubes, atletas, contratos e imagem</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -744,6 +727,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Desportivo." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Desportivo via WhatsApp</span>
                 </a>
               </div>
@@ -760,17 +746,13 @@
               aria-controls="panel-ambiental"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c0-6 4.5-10.5 9-12-1.5 6-4.5 9-9 12Zm0 0c0-6-4.5-10.5-9-12 1.5 6 4.5 9 9 12Zm0-12V3"/>
-                </svg>
+                <i data-lucide="leaf" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Ambiental</span>
                 <span class="dossier-tab__sub">Licenciamento e defesa ambiental</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -805,6 +787,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Ambiental." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Ambiental via WhatsApp</span>
                 </a>
               </div>
@@ -821,17 +806,13 @@
               aria-controls="panel-digital"
             >
               <span class="dossier-tab__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m-8.485 6h16.97M3.515 15h16.97"/>
-                </svg>
+                <i data-lucide="cpu" class="icon" aria-hidden="true"></i>
               </span>
               <span class="dossier-tab__text">
                 <span class="dossier-tab__title">Direito Digital e Startups</span>
                 <span class="dossier-tab__sub">Tecnologia, startups e crimes digitais</span>
               </span>
-              <svg class="icon dossier-tab__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
-              </svg>
+              <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div
@@ -866,6 +847,9 @@
               </div>
               <div class="dossier-panel__footer">
                 <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20o%20escrit%C3%B3rio%20sobre%20Direito%20Digital%20e%20Startups." target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
+                  </svg>
                   <span>Consultar sobre Direito Digital via WhatsApp</span>
                 </a>
               </div>
@@ -910,9 +894,7 @@
           <div class="methodology-stack">
             <article class="methodology-row">
               <div class="methodology-row__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
-                </svg>
+                <i data-lucide="user-check" class="icon" aria-hidden="true"></i>
               </div>
               <div>
                 <h3 class="methodology-row__title">Relacionamento Direto e Pessoal</h3>
@@ -922,9 +904,7 @@
 
             <article class="methodology-row">
               <div class="methodology-row__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/>
-                </svg>
+                <i data-lucide="bar-chart-3" class="icon" aria-hidden="true"></i>
               </div>
               <div>
                 <h3 class="methodology-row__title">Gestão Eficiente de Custos Processuais</h3>
@@ -934,9 +914,7 @@
 
             <article class="methodology-row">
               <div class="methodology-row__icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
-                </svg>
+                <i data-lucide="users" class="icon" aria-hidden="true"></i>
               </div>
               <div>
                 <h3 class="methodology-row__title">Equipe Multidisciplinar Associada</h3>
@@ -983,9 +961,7 @@
             <div class="pub-card__actions">
               <button type="button" class="btn btn--secondary btn--sm" data-open-pub="aime">Ler resumo técnico</button>
               <a href="assets/docs/artigo-luciano-aime.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>
-                </svg>
+                <i data-lucide="file-text" class="icon" aria-hidden="true"></i>
                 <span>Abrir PDF oficial</span>
               </a>
             </div>
@@ -1208,9 +1184,7 @@
                   rel="noopener noreferrer"
                   class="btn btn--secondary btn--sm"
                 >
-                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"/>
-                  </svg>
+                  <i data-lucide="navigation" class="icon" aria-hidden="true"></i>
                   <span>Traçar Rota no Google Maps</span>
                 </a>
               </div>
@@ -1277,8 +1251,8 @@
 
               <div class="triage-form__actions">
                 <button type="submit" class="btn btn--primary btn--full">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.5a8.5 8.5 0 0 1-12.56 7.46L3.5 20.5l1.58-4.29A8.5 8.5 0 1 1 20.5 11.5Z"/>
+                  <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-whatsapp"></use>
                   </svg>
                   <span>Preparar e Enviar Atendimento via WhatsApp</span>
                 </button>
@@ -1290,7 +1264,12 @@
                   Sua mensagem foi preparada para o atendimento da <strong>Souza Siqueira Sociedade de Advogados</strong>. Clique abaixo para concluir o envio pelo canal de sua preferência:
                 </p>
                 <div class="form-feedback__links">
-                  <a href="#" id="feedback-whatsapp-link" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Abrir conversa no WhatsApp (11) 93713-7822</a>
+                  <a href="#" id="feedback-whatsapp-link" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                    <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <use href="#icon-whatsapp"></use>
+                    </svg>
+                    <span>Abrir conversa no WhatsApp (11) 93713-7822</span>
+                  </a>
                   <a href="#" id="feedback-email-link" class="btn btn--secondary btn--sm">Enviar por E-mail (contato@souzasiqueira.com.br)</a>
                 </div>
               </div>
@@ -1312,11 +1291,7 @@
           <p class="footer-brand__tagline">Advogando desde 1996 · Trinta anos de excelência jurídica em Bragança Paulista, em todo o Estado de São Paulo e principais capitais.</p>
           <div class="footer-social">
             <a href="https://www.instagram.com/souzasiqueiraadvogados/" target="_blank" rel="noopener noreferrer" class="footer-social__link">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
-              </svg>
+              <i data-lucide="instagram" class="icon" aria-hidden="true"></i>
               <span>Instagram @souzasiqueiraadvogados</span>
             </a>
           </div>
@@ -1364,9 +1339,8 @@
     class="whatsapp-float"
     aria-label="Iniciar atendimento pelo WhatsApp (11) 93713-7822"
   >
-    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.5a8.5 8.5 0 0 1-12.56 7.46L3.5 20.5l1.58-4.29A8.5 8.5 0 1 1 20.5 11.5Z"/>
-      <path stroke-linecap="round" stroke-linejoin="round" d="M9.3 8.9c.2-.4.45-.4.66-.4.17 0 .36 0 .52.38.19.44.63 1.54.69 1.65.06.11.09.24.02.38-.08.15-.12.24-.24.37-.12.13-.25.29-.35.39-.12.11-.24.24-.1.47.14.23.62 1.02 1.33 1.65.91.81 1.68 1.06 1.91 1.18.23.11.37.1.5-.06.14-.16.58-.68.74-.91.15-.23.31-.19.52-.11.21.08 1.35.64 1.58.75.23.12.39.18.45.27.06.1.06.56-.14 1.1-.19.54-1.12 1.04-1.56 1.1-.4.06-.91.09-1.47-.09-.34-.11-.78-.25-1.35-.5-2.37-1.02-3.92-3.41-4.04-3.57-.12-.16-.96-1.28-.96-2.44 0-1.16.6-1.73.82-1.97Z"/>
+    <svg class="whatsapp-float__icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <use href="#icon-whatsapp"></use>
     </svg>
     <span class="whatsapp-float__label">WhatsApp</span>
   </a>
@@ -1380,9 +1354,7 @@
           <span class="pub-modal__date" id="modal-pub-date"></span>
         </div>
         <button type="button" class="pub-modal__close" id="modal-pub-close" aria-label="Fechar leitura do artigo">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
-          </svg>
+          <i data-lucide="x" class="icon" aria-hidden="true"></i>
         </button>
       </div>
       <h3 class="pub-modal__title" id="modal-pub-title"></h3>
@@ -1392,6 +1364,7 @@
     </div>
   </dialog>
 
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
