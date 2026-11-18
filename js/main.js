@@ -327,6 +327,10 @@
 
       btn.addEventListener('click', () => {
         activateItem(item, true);
+        const areaId = item.getAttribute('data-area-id');
+        if (areaId && window.history && typeof window.history.replaceState === 'function') {
+          window.history.replaceState(null, '', `#${areaId}`);
+        }
       });
 
       btn.addEventListener('keydown', (event) => {
@@ -431,6 +435,34 @@
         }
       });
     });
+
+    // Deep-linking por hash (#tributario, #empresarial, #trabalho, #civil, #eleitoral, #desportivo, #ambiental, #digital)
+    function syncAreaFromHash() {
+      const hashId = (window.location.hash || '').replace(/^#/, '').trim();
+      if (!hashId) return;
+
+      const targetItem = items.find((i) => i.getAttribute('data-area-id') === hashId);
+      if (!targetItem) return;
+
+      if (searchInput && searchInput.value.trim()) {
+        searchInput.value = '';
+        applyFilter();
+      }
+
+      activateItem(targetItem, false);
+
+      window.requestAnimationFrame(() => {
+        if (isDesktopLayout()) {
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          const btn = targetItem.querySelector('.dossier-tab');
+          if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    syncAreaFromHash();
+    window.addEventListener('hashchange', syncAreaFromHash);
   }
 
   /**

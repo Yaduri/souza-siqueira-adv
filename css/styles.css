@@ -585,6 +585,10 @@ ul, ol, dl, dt, dd {
   text-decoration: none;
 }
 
+.mobile-nav__link.is-active {
+  color: var(--color-accent);
+}
+
 .mobile-nav__cta {
   display: grid;
   gap: 0.75rem;
@@ -1967,6 +1971,422 @@ ul, ol, dl, dt, dd {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+/* ==========================================================================
+   Componentes Multi-Páginas (Cabeçalhos Internos, Listas e Blocos)
+   ========================================================================== */
+.page-hero {
+  background-color: var(--bg-navy-deep);
+  color: var(--text-on-dark);
+  padding-block: clamp(2.5rem, 5vw, 4.25rem);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  list-style: none;
+  padding: 0;
+  font-size: 0.875rem;
+  color: var(--text-on-dark-muted);
+}
+
+.breadcrumb a {
+  color: var(--text-on-dark-muted);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.breadcrumb a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.page-hero__title {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  color: #FFFFFF;
+  max-width: 28ch;
+}
+
+.page-hero__lead {
+  margin-top: 1rem;
+  font-size: clamp(1.02rem, 1.25vw, 1.15rem);
+  color: var(--text-on-dark-muted);
+  max-width: 66ch;
+}
+
+/* Panorama de Áreas na Home (Lista Arquitetônica) */
+.areas-preview-grid {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--border-hairline);
+}
+
+@media (min-width: 820px) {
+  .areas-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2.5rem;
+  }
+}
+
+.area-preview-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--border-hairline);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color var(--t-fast) var(--ease-out);
+}
+
+.area-preview-row:hover {
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.area-preview-row__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color var(--t-fast) var(--ease-out),
+    color var(--t-fast) var(--ease-out),
+    border-color var(--t-fast) var(--ease-out);
+}
+
+.area-preview-row:hover .area-preview-row__icon {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.area-preview-row__title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.area-preview-row__desc {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.area-preview-row__arrow {
+  color: var(--color-secondary);
+  transition: transform var(--t-fast) var(--ease-out);
+}
+
+.area-preview-row:hover .area-preview-row__arrow {
+  transform: translateX(3px);
+  color: var(--color-accent);
+}
+
+.section-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+/* Split Resumo Institucional (Home) */
+.summary-split {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .summary-split {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 3rem;
+  }
+}
+
+.summary-ledger {
+  border-top: 1px solid var(--border-hairline);
+}
+
+.summary-ledger__item {
+  padding-block: 1.15rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.summary-ledger__item dt {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.summary-ledger__item dd {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* Galeria Trio (o-escritorio.html) */
+.gallery-trio {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .gallery-trio {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.gallery-trio__figure {
+  margin: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.gallery-trio__figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-trio__figure figcaption {
+  padding: 0.9rem 1rem;
+  background: var(--bg-navy-deep);
+  color: var(--text-on-dark);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+/* Metodologia em 4 Etapas (areas-de-atuacao.html) */
+.process-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .process-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .process-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.process-list__item {
+  padding-top: 1rem;
+  border-top: 2px solid var(--color-primary);
+}
+
+.process-list__step {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.process-list__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.process-list__desc {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+}
+
+/* Destaque Monografia (publicacoes.html) */
+.featured-pub {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .featured-pub {
+    grid-template-columns: minmax(0, 1.4fr) auto;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.featured-pub__title {
+  font-size: clamp(1.55rem, 2.3vw, 2.05rem);
+  margin-block: 0.45rem;
+}
+
+.featured-pub__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Faixa de Canais Rápidos (contato.html) */
+.channels-strip {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+@media (min-width: 640px) {
+  .channels-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .channels-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.channel-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color var(--t-fast) var(--ease-out),
+    box-shadow var(--t-fast) var(--ease-out);
+}
+
+.channel-tile:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.channel-tile__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.channel-tile--whatsapp .channel-tile__icon {
+  background: #0E7A4B;
+  color: #FFFFFF;
+}
+
+.channel-tile__label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.channel-tile__value {
+  display: block;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  overflow-wrap: break-word;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Faixa CTA Institucional */
+.cta-banner {
+  background: var(--bg-navy-deep);
+  color: var(--text-on-dark);
+  padding-block: clamp(2.75rem, 5vw, 4rem);
+  border-top: 1px solid var(--border-dark);
+}
+
+.cta-banner__inner {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .cta-banner__inner {
+    grid-template-columns: minmax(0, 1.3fr) auto;
+    gap: 2.5rem;
+  }
+}
+
+.cta-banner__title {
+  font-size: clamp(1.65rem, 2.6vw, 2.25rem);
+  color: #FFFFFF;
+}
+
+.cta-banner__text {
+  margin-top: 0.65rem;
+  color: var(--text-on-dark-muted);
+  max-width: 62ch;
+}
+
+.cta-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.btn--on-dark {
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+  border-color: #FFFFFF;
+}
+
+.btn--on-dark:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--bg-subtle);
+}
+
+.btn--outline-dark {
+  background-color: transparent;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn--outline-dark:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #FFFFFF;
 }
 
 /* ==========================================================================
