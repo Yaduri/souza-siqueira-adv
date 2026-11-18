@@ -284,128 +284,6 @@ ul, ol, dl, dt, dd {
 }
 
 /* ==========================================================================
-   Barra Institucional Superior (.topbar)
-   ========================================================================== */
-.topbar {
-  background-color: var(--bg-navy-deep);
-  color: var(--text-on-dark-muted);
-  font-size: 0.78rem;
-  border-bottom: 1px solid var(--border-dark);
-}
-
-.topbar__inner {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  padding-block: 0.5rem;
-}
-
-.topbar__location {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--text-on-dark-muted);
-}
-
-.topbar__location .icon {
-  color: var(--color-gold-muted);
-  width: 0.95rem;
-  height: 0.95rem;
-}
-
-.topbar__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
-}
-
-.status-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.2rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid var(--border-dark);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-on-dark);
-  font-size: 0.76rem;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-.status-pill__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #94A3B8;
-}
-
-.status-pill.is-open .status-pill__dot {
-  background-color: #10B981;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
-}
-
-.status-pill.is-closed .status-pill__dot {
-  background-color: #D97706;
-}
-
-.topbar__links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem 1.15rem;
-}
-
-.topbar__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  color: var(--text-on-dark);
-  text-decoration: none;
-  font-variant-numeric: tabular-nums;
-  transition: color var(--t-fast) var(--ease-out);
-}
-
-.topbar__link .icon {
-  width: 0.95rem;
-  height: 0.95rem;
-  color: var(--color-gold-muted);
-}
-
-.topbar__link--whatsapp .icon-whatsapp {
-  color: #25D366;
-}
-
-.topbar__link:hover {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-@media (min-width: 1240px) {
-  .topbar__inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .topbar__location {
-    white-space: nowrap;
-  }
-
-  .topbar__meta {
-    flex-wrap: nowrap;
-  }
-
-  .topbar__links {
-    flex-wrap: nowrap;
-    white-space: nowrap;
-  }
-}
-
-/* ==========================================================================
    Cabeçalho Fixo (.site-header)
    ========================================================================== */
 .site-header {
@@ -2407,7 +2285,6 @@ ul, ol, dl, dt, dd {
 }
 
 @media print {
-  .topbar,
   .site-header,
   .showcase-controls,
   .dossier-search,
