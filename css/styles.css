@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Souza Siqueira Sociedade de Advogados — Design System & Layout
+   Souza Siqueira Sociedade de Advogados: Design System & Layout
    Paleta Institucional + Tipografia Editorial (EB Garamond & Lato)
    ========================================================================== */
 
@@ -779,7 +779,7 @@ ul, ol, dl, dt, dd {
   display: inline-block;
   margin-bottom: 0.5rem;
   font-size: 0.85rem;
-  font-weight: 900;
+  font-weight: 600;
   color: var(--color-accent);
   font-variant-numeric: tabular-nums;
 }
@@ -795,7 +795,7 @@ ul, ol, dl, dt, dd {
 }
 
 /* ==========================================================================
-   Seção Áreas de Atuação — Dossiê Interativo Master-Detail / Acordeão Mobile
+   Seção Áreas de Atuação: Dossiê Interativo Master-Detail / Acordeão Mobile
    ========================================================================== */
 .dossier-search__label {
   display: block;
@@ -917,22 +917,12 @@ ul, ol, dl, dt, dd {
   height: 1.2rem;
 }
 
-.dossier-tab__text {
-  display: grid;
-  gap: 0.12rem;
-  flex: 1;
-}
-
 .dossier-tab__title {
+  flex: 1;
   font-family: var(--font-serif);
   font-size: 1.18rem;
   font-weight: 700;
   line-height: 1.2;
-}
-
-.dossier-tab__sub {
-  font-size: 0.82rem;
-  color: var(--text-muted);
 }
 
 .dossier-tab__chevron {
@@ -949,10 +939,6 @@ ul, ol, dl, dt, dd {
   color: #FFFFFF;
 }
 
-.dossier-item.is-active .dossier-tab__sub {
-  color: var(--text-on-dark-muted);
-}
-
 .dossier-item.is-active .dossier-tab__chevron {
   transform: rotate(90deg);
 }
@@ -963,29 +949,11 @@ ul, ol, dl, dt, dd {
   background: var(--bg-surface);
 }
 
-.dossier-panel__head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.65rem 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-soft);
-}
-
 .dossier-panel__title {
   font-size: clamp(1.6rem, 2.2vw, 2.1rem);
   color: var(--color-primary);
-}
-
-.dossier-panel__badge {
-  display: inline-block;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  background: var(--bg-subtle);
-  color: var(--color-secondary);
-  font-size: 0.8125rem;
-  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .dossier-panel__summary {
@@ -1451,11 +1419,6 @@ ul, ol, dl, dt, dd {
 /* Formulário */
 .triage-form__head {
   margin-bottom: 1.5rem;
-}
-
-.triage-form__desc {
-  color: var(--text-secondary);
-  font-size: 0.96rem;
 }
 
 .form-grid {
@@ -2087,14 +2050,6 @@ ul, ol, dl, dt, dd {
   border-top: 2px solid var(--color-primary);
 }
 
-.process-list__step {
-  display: inline-block;
-  margin-bottom: 0.45rem;
-  font-size: 0.85rem;
-  font-weight: 900;
-  color: var(--color-accent);
-  font-variant-numeric: tabular-nums;
-}
 
 .process-list__title {
   font-size: 1.25rem;

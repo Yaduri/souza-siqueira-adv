@@ -1,5 +1,5 @@
 /**
- * Souza Siqueira Sociedade de Advogados — Comportamento e Interatividade
+ * Souza Siqueira Sociedade de Advogados: Comportamento e Interatividade
  * Vanilla ES6+ sem dependências externas
  */
 
@@ -25,7 +25,7 @@
       tag: 'Direito Desportivo',
       date: '14/10/2024',
       title: 'Evolução do Vínculo Federativo de Atletas Não Profissionais',
-      author: 'Coautoria · Parceria ESA / Comissão de Direito Desportivo da OAB-SP',
+      author: 'Coautoria, Parceria ESA / Comissão de Direito Desportivo da OAB-SP',
       paragraphs: [
         'Contribuição doutrinária publicada em obra coletiva em parceria com a Escola Superior de Advocacia (ESA) e a Comissão de Direito Desportivo da OAB-SP, examinando o histórico normativo do vínculo desportivo e federativo aplicável a atletas não profissionais.',
         'O estudo aborda o equilíbrio jurídico entre a proteção integral de jovens atletas em formação, as exigências da Lei Geral do Esporte e a segurança contratual e formativa das entidades de prática desportiva.'
@@ -35,7 +35,7 @@
       tag: 'Direito Civil e Sucessões',
       date: '01/10/2024',
       title: 'Direito Real de Habitação: Distinção entre Sucessão Hereditária e Divórcio',
-      author: 'Informativo Jurisprudencial · Superior Tribunal de Justiça (STJ)',
+      author: 'Informativo Jurisprudencial, Superior Tribunal de Justiça (STJ)',
       paragraphs: [
         'Nota técnica sobre o posicionamento consolidado do Superior Tribunal de Justiça acerca do art. 1.831 do Código Civil: o direito real de habitação possui natureza estritamente sucessória e visa assegurar moradia ao cônjuge ou companheiro sobrevivente após o falecimento do titular do imóvel residencial da família.',
         'Em contrapartida, nos casos de separação ou divórcio em vida, não incide o direito real de habitação previsto no direito das sucessões, devendo a ocupação e a partilha do patrimônio imobiliário observar as regras próprias do regime de bens e eventual arbitramento de aluguel pelo uso exclusivo.'
@@ -45,7 +45,7 @@
       tag: 'Direito Civil e Sucessões',
       date: '27/09/2025',
       title: 'Responsabilidade Civil Objetiva dos Pais pelos Atos de Filhos Menores',
-      author: 'Informativo Técnico · Código Civil (Art. 932, I) e ECA',
+      author: 'Informativo Técnico, Código Civil (Art. 932, I) e ECA',
       paragraphs: [
         'Síntese informativa sobre a responsabilidade civil objetiva dos genitores pelos danos materiais ou morais causados por filhos menores que estiverem sob sua autoridade e em sua companhia, conforme dispõem os arts. 932, inciso I, e 933 do Código Civil.',
         'O dever de indenizar independe da comprovação de culpa direta dos pais pelo ato praticado pelo menor, reforçando a importância da orientação familiar contínua e da análise preventiva de riscos nas relações civis e digitais.'
@@ -58,14 +58,14 @@
       author: 'Por Christiany Pegorari Conte (Autora convidada)',
       paragraphs: [
         'O texto examina os desdobramentos jurídicos da sociedade da informação diante das tentativas de limitação comercial de pacotes de dados e mecanismos de controle de acesso à rede mundial de computadores.',
-        'À luz dos princípios do Marco Civil da Internet — especialmente a neutralidade de rede, a liberdade de expressão e a garantia de acesso à informação como vetor de cidadania — o estudo discute os limites regulatórios aplicáveis a provedores e plataformas digitais.'
+        'À luz dos princípios do Marco Civil da Internet (neutralidade de rede, liberdade de expressão e garantia de acesso à informação como vetor de cidadania), o estudo discute os limites regulatórios aplicáveis a provedores e plataformas digitais.'
       ]
     },
     'autonomia-esportiva': {
       tag: 'Direito Desportivo',
       date: '23/05/2016',
       title: 'Considerações sobre a Autonomia Esportiva e Atletas Profissionais vs. Amadores',
-      author: 'Acervo Técnico · Souza Siqueira Sociedade de Advogados',
+      author: 'Acervo Técnico, Souza Siqueira Sociedade de Advogados',
       paragraphs: [
         'Reúne análises do acervo de Direito Desportivo do escritório sobre a autonomia constitucional das entidades dirigentes do desporto, os pontos de tensão com a soberania estatal na realização de grandes eventos internacionais e as distinções jurídicas entre o atleta profissional e o atleta amador.',
         'Os estudos detalham as implicações trabalhistas, contratuais, previdenciárias e disciplinares decorrentes de cada modalidade de vínculo esportivo.'
@@ -75,7 +75,7 @@
       tag: 'Direito Tributário',
       date: 'Série Tributo em Foco',
       title: 'Planejamento Tributário Preventivo e Competitividade Empresarial',
-      author: 'Coluna Tributo em Foco · Acervo Souza Siqueira',
+      author: 'Coluna Tributo em Foco, Acervo Souza Siqueira',
       paragraphs: [
         'Compilação temática da série de artigos publicados originalmente na coluna Tributo em Foco (Bragança Jornal Diário), dedicada a traduzir conceitos complexos do Sistema Tributário Nacional para gestores e empresários.',
         'Os textos destacam a elisão fiscal lícita, a revisão contínua de enquadramentos tributários nos âmbitos federal, estadual e municipal e a importância de diagnósticos preventivos diante de constantes alterações legislativas.'
@@ -124,21 +124,16 @@
    * 1. Status em tempo real (Fuso America/Sao_Paulo) e destaque do dia na tabela de horários
    */
   function initOfficeStatus() {
-    const badge = document.getElementById('office-status-badge');
     const hoursTable = document.getElementById('hours-table');
+    if (!hoursTable) return;
 
     let dayIndex = new Date().getDay();
-    let hour = new Date().getHours();
-    let minute = new Date().getMinutes();
 
     try {
       const now = new Date();
       const parts = new Intl.DateTimeFormat('en-US', {
         timeZone: 'America/Sao_Paulo',
-        weekday: 'short',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false
+        weekday: 'short'
       }).formatToParts(now);
 
       const map = Object.fromEntries(parts.map((p) => [p.type, p.value]));
@@ -146,38 +141,19 @@
       if (map.weekday && weekdayMap[map.weekday] !== undefined) {
         dayIndex = weekdayMap[map.weekday];
       }
-      hour = parseInt(map.hour, 10);
-      minute = parseInt(map.minute, 10);
     } catch (_) {
-      // Fallback mantém horário local do navegador
+      // Fallback mantém dia local do navegador
     }
 
-    const totalMinutes = hour * 60 + minute;
-    const isWeekday = dayIndex >= 1 && dayIndex <= 5;
-    const isOpenNow = isWeekday && totalMinutes >= 8 * 60 && totalMinutes < 18 * 60;
-
-    if (badge) {
-      const textEl = badge.querySelector('.status-pill__text');
-      badge.classList.toggle('is-open', isOpenNow);
-      badge.classList.toggle('is-closed', !isOpenNow);
-      if (textEl) {
-        textEl.textContent = isOpenNow
-          ? 'Aberto agora · Atendimento até 18h00'
-          : 'Fechado agora · Atendimento Seg. a Sex. 08h às 18h';
-      }
-    }
-
-    if (hoursTable) {
-      const todayRow = hoursTable.querySelector(`tr[data-day="${dayIndex}"]`);
-      if (todayRow) {
-        todayRow.classList.add('is-today');
-        const th = todayRow.querySelector('th');
-        if (th && !th.querySelector('.today-badge')) {
-          const span = document.createElement('span');
-          span.className = 'today-badge';
-          span.textContent = 'Hoje';
-          th.appendChild(span);
-        }
+    const todayRow = hoursTable.querySelector(`tr[data-day="${dayIndex}"]`);
+    if (todayRow) {
+      todayRow.classList.add('is-today');
+      const th = todayRow.querySelector('th');
+      if (th && !th.querySelector('.today-badge')) {
+        const span = document.createElement('span');
+        span.className = 'today-badge';
+        span.textContent = 'Hoje';
+        th.appendChild(span);
       }
     }
   }
@@ -722,17 +698,17 @@
       const lines = [
         'Olá, equipe Souza Siqueira Sociedade de Advogados.',
         'Solicitação enviada pelo site institucional:',
-        `• Nome: ${nome}`
+        `- Nome: ${nome}`
       ];
-      if (empresa) lines.push(`• Empresa/Organização: ${empresa}`);
-      lines.push(`• Telefone/WhatsApp: ${telefone}`);
-      lines.push(`• E-mail: ${email}`);
-      lines.push(`• Área de Interesse: ${area}`);
-      lines.push(`• Resumo da demanda: ${mensagem}`);
+      if (empresa) lines.push(`- Empresa/Organização: ${empresa}`);
+      lines.push(`- Telefone/WhatsApp: ${telefone}`);
+      lines.push(`- E-mail: ${email}`);
+      lines.push(`- Área de Interesse: ${area}`);
+      lines.push(`- Resumo da demanda: ${mensagem}`);
 
       const composedText = lines.join('\n');
       const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(composedText)}`;
-      const emailSubject = encodeURIComponent(`Solicitação de Atendimento — ${area} (${nome})`);
+      const emailSubject = encodeURIComponent(`Solicitação de Atendimento: ${area} (${nome})`);
       const emailBody = encodeURIComponent(composedText);
       const mailtoHref = `mailto:${CONTACT_EMAIL}?subject=${emailSubject}&body=${emailBody}`;
 

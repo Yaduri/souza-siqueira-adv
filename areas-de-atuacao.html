@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,7 +29,7 @@
   <!-- Cabeçalho Principal -->
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
-      <a href="index.html" class="brand" aria-label="Souza Siqueira Sociedade de Advogados — Página Inicial">
+      <a href="index.html" class="brand" aria-label="Souza Siqueira Sociedade de Advogados, Página Inicial">
         <img src="assets/images/logo.png" alt="Souza Siqueira Sociedade de Advogados" class="brand__logo" width="210" height="64">
         <span class="brand__heritage">Advogando desde 1996</span>
       </a>
@@ -99,9 +99,6 @@
           </ol>
         </nav>
         <h1 class="page-hero__title">Atuação jurídica multidisciplinar para decisões empresariais e proteção patrimonial.</h1>
-        <p class="page-hero__lead">
-          Consulte abaixo o dossiê completo de nossas oito especialidades jurídicas ou filtre pelo serviço de interesse.
-        </p>
       </div>
     </section>
 
@@ -110,10 +107,7 @@
       <div class="container">
         <div class="section-header section-header--split">
           <div>
-            <h2 class="section-title">Especialidades e escopo completo de serviços jurídicos.</h2>
-            <p class="section-lead">
-              Cada especialidade é conduzida de forma integrada às demais áreas do Direito para oferecer respostas preventivas e contenciosas completas.
-            </p>
+            <h2 class="section-title">Especialidades</h2>
           </div>
 
           <div class="dossier-search">
@@ -124,7 +118,7 @@
                 type="search"
                 id="area-search"
                 class="dossier-search__input"
-                placeholder="Ex.: planejamento tributário, inventário, startup, atleta..."
+                placeholder="tributário, inventário, startup"
                 autocomplete="off"
               >
               <button type="button" id="area-search-clear" class="dossier-search__clear" hidden aria-label="Limpar busca">Limpar</button>
@@ -134,8 +128,8 @@
         </div>
 
         <div class="dossier-empty" id="dossier-empty" hidden>
-          <p>Nenhuma área de atuação corresponde ao termo pesquisado.</p>
-          <button type="button" class="btn btn--secondary btn--sm" id="dossier-reset-btn">Exibir todas as 8 áreas</button>
+          <p>Nenhuma área encontrada.</p>
+          <button type="button" class="btn btn--secondary btn--sm" id="dossier-reset-btn">Exibir todas</button>
         </div>
 
         <div class="dossier-grid" id="dossier-grid">
@@ -151,18 +145,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="landmark" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Tributário</span>
-                <span class="dossier-tab__sub">Planejamento fiscal e contencioso</span>
-              </span>
+              <span class="dossier-tab__title">Direito Tributário</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-tributario" role="region" aria-labelledby="tab-tributario">
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Tributário</h3>
-                <span class="dossier-panel__badge">Esferas Federal, Estadual e Municipal</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Tributário</h3>
               <p class="dossier-panel__summary">
                 Análise das alternativas fiscais para maior competitividade empresarial, com atuação preventiva frente às frequentes alterações da legislação tributária, redução lícita da carga fiscal e permanente atualização técnica em tributos diretos e indiretos.
               </p>
@@ -203,18 +191,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="building-2" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Empresarial e Societário</span>
-                <span class="dossier-tab__sub">Contratos, sociedades e reestruturação</span>
-              </span>
+              <span class="dossier-tab__title">Direito Empresarial e Societário</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-empresarial" role="region" aria-labelledby="tab-empresarial" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Empresarial e Societário</h3>
-                <span class="dossier-panel__badge">Governança, Contratos e Crise</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Empresarial e Societário</h3>
               <p class="dossier-panel__summary">
                 Consultoria e resolução de demandas relativas a contratos e obrigações comerciais, estruturação societária, governança entre sócios e recuperação de crédito ou reestruturação de passivos empresariais.
               </p>
@@ -255,18 +237,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="briefcase" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito do Trabalho</span>
-                <span class="dossier-tab__sub">Auditoria de RH e contencioso</span>
-              </span>
+              <span class="dossier-tab__title">Direito do Trabalho</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-trabalho" role="region" aria-labelledby="tab-trabalho" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito do Trabalho Preventivo e Contencioso</h3>
-                <span class="dossier-panel__badge">Gestão de Pessoal e Defesa</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito do Trabalho Preventivo e Contencioso</h3>
               <p class="dossier-panel__summary">
                 Diagnóstico completo da administração de pessoal e controles internos para identificar contingências e irregularidades, otimizar rotinas trabalhistas e reduzir o impacto financeiro de autuações fiscais e reclamações trabalhistas.
               </p>
@@ -307,18 +283,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="scale" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Civil, Família e Sucessões</span>
-                <span class="dossier-tab__sub">Patrimônio, contratos e família</span>
-              </span>
+              <span class="dossier-tab__title">Direito Civil, Família e Sucessões</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-civil" role="region" aria-labelledby="tab-civil" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Civil, Família e Sucessões</h3>
-                <span class="dossier-panel__badge">Consultivo e Contencioso Cível</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Civil, Família e Sucessões</h3>
               <p class="dossier-panel__summary">
                 Atuação abrangente nas relações civis, patrimoniais, contratuais e familiares, garantindo segurança jurídica na elaboração de instrumentos particulares, resolução de conflitos e proteção sucessória.
               </p>
@@ -359,18 +329,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="shield-check" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Eleitoral e Partidário</span>
-                <span class="dossier-tab__sub">Campanhas, mandatos e vida partidária</span>
-              </span>
+              <span class="dossier-tab__title">Direito Eleitoral e Partidário</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-eleitoral" role="region" aria-labelledby="tab-eleitoral" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Eleitoral e Partidário</h3>
-                <span class="dossier-panel__badge">Assessoria Eleitoral Especializada</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Eleitoral e Partidário</h3>
               <p class="dossier-panel__summary">
                 Assessoria jurídica especializada a partidos políticos, candidatos em eleições proporcionais e majoritárias, coligações, Prefeituras e ocupantes de cargos eletivos, antes, durante e após o período eleitoral.
               </p>
@@ -411,18 +375,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="trophy" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Desportivo</span>
-                <span class="dossier-tab__sub">Clubes, atletas, contratos e imagem</span>
-              </span>
+              <span class="dossier-tab__title">Direito Desportivo</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-desportivo" role="region" aria-labelledby="tab-desportivo" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Desportivo</h3>
-                <span class="dossier-panel__badge">Atuação Nacional e Internacional</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Desportivo</h3>
               <p class="dossier-panel__summary">
                 Assessoria preventiva e contenciosa abrangendo aspectos civis, empresariais, trabalhistas, tributários e internacionais aplicados ao esporte profissional e amador, com produção doutrinária reconhecida junto à Comissão de Direito Desportivo da OAB-SP.
               </p>
@@ -463,18 +421,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="leaf" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Ambiental</span>
-                <span class="dossier-tab__sub">Licenciamento e defesa ambiental</span>
-              </span>
+              <span class="dossier-tab__title">Direito Ambiental</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-ambiental" role="region" aria-labelledby="tab-ambiental" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Ambiental</h3>
-                <span class="dossier-panel__badge">Conformidade e Sustentabilidade</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Ambiental</h3>
               <p class="dossier-panel__summary">
                 Consultoria estratégica em questões ambientais para viabilizar empreendimentos e operações produtivas dentro da legalidade, prevenindo sanções administrativas, cíveis e penais.
               </p>
@@ -515,18 +467,12 @@
               <span class="dossier-tab__icon" aria-hidden="true">
                 <i data-lucide="cpu" class="icon" aria-hidden="true"></i>
               </span>
-              <span class="dossier-tab__text">
-                <span class="dossier-tab__title">Direito Digital e Startups</span>
-                <span class="dossier-tab__sub">Tecnologia, startups e crimes digitais</span>
-              </span>
+              <span class="dossier-tab__title">Direito Digital e Startups</span>
               <i data-lucide="chevron-right" class="icon dossier-tab__chevron" aria-hidden="true"></i>
             </button>
 
             <div class="dossier-panel" id="panel-digital" role="region" aria-labelledby="tab-digital" hidden>
-              <div class="dossier-panel__head">
-                <h3 class="dossier-panel__title">Direito Digital e Startups</h3>
-                <span class="dossier-panel__badge">Inovação e Responsabilidade Digital</span>
-              </div>
+              <h3 class="dossier-panel__title">Direito Digital e Startups</h3>
               <p class="dossier-panel__summary">
                 Consultoria jurídica especializada para negócios de tecnologia, proteção de ativos intangíveis e resposta ágil diante de ilícitos e fraudes praticados em ambiente eletrônico.
               </p>
@@ -563,29 +509,22 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Como conduzimos demandas consultivas e contenciosas.</h2>
-          <p class="section-lead">
-            Nossa metodologia integra análise técnica preventiva e gestão econômica responsável em quatro etapas estruturadas.
-          </p>
         </div>
 
         <ol class="process-list">
           <li class="process-list__item">
-            <span class="process-list__step">01</span>
             <h3 class="process-list__title">Diagnóstico Preliminar</h3>
             <p class="process-list__desc">Levantamento documental, mapeamento de riscos e avaliação da viabilidade jurídica e financeira do cenário apresentado.</p>
           </li>
           <li class="process-list__item">
-            <span class="process-list__step">02</span>
             <h3 class="process-list__title">Estratégia e Prevenção</h3>
             <p class="process-list__desc">Desenho de soluções contratuais, societárias ou fiscais voltadas a evitar litígios e reduzir exposição patrimonial.</p>
           </li>
           <li class="process-list__item">
-            <span class="process-list__step">03</span>
             <h3 class="process-list__title">Condução Técnica</h3>
             <p class="process-list__desc">Atuação administrativa ou judicial com sustentação doutrinária sólida nas instâncias competentes em SP e capitais.</p>
           </li>
           <li class="process-list__item">
-            <span class="process-list__step">04</span>
             <h3 class="process-list__title">Acompanhamento Direto</h3>
             <p class="process-list__desc">Comunicação transparente e personalizada com o cliente durante todo o ciclo de resolução da demanda.</p>
           </li>
@@ -604,7 +543,7 @@
         </div>
         <div class="cta-banner__actions">
           <a href="contato.html" class="btn btn--on-dark">
-            <span>Agendar Consulta</span>
+            <span>Agendar consulta</span>
             <i data-lucide="arrow-right" class="icon" aria-hidden="true"></i>
           </a>
           <a href="https://wa.me/5511937137822?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Souza%20Siqueira%20Sociedade%20de%20Advogados%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn btn--outline-dark">
@@ -624,7 +563,7 @@
           <div class="footer-brand__emblem">
             <img src="assets/images/logo-maior.png" alt="Souza Siqueira Sociedade de Advogados" width="220" height="72">
           </div>
-          <p class="footer-brand__tagline">Advogando desde 1996 · Trinta anos de excelência jurídica em Bragança Paulista, em todo o Estado de São Paulo e principais capitais.</p>
+          <p class="footer-brand__tagline">Advogando desde 1996. Trinta anos de excelência jurídica em Bragança Paulista, em todo o Estado de São Paulo e principais capitais.</p>
           <div class="footer-social">
             <a href="https://www.instagram.com/souzasiqueiraadvogados/" target="_blank" rel="noopener noreferrer" class="footer-social__link">
               <i data-lucide="instagram" class="icon" aria-hidden="true"></i>
@@ -660,7 +599,7 @@
             <p>WhatsApp: <a href="https://wa.me/5511937137822" target="_blank" rel="noopener noreferrer">(11) 93713-7822</a></p>
             <p>E-mail: <a href="mailto:contato@souzasiqueira.com.br">contato@souzasiqueira.com.br</a></p>
           </address>
-          <p class="footer-hours">Segunda a Sexta: 08:00–18:00 · Sábado e Domingo: Fechado</p>
+          <p class="footer-hours">Segunda a Sexta: 08:00–18:00. Sábado e Domingo: Fechado</p>
         </div>
       </div>
 

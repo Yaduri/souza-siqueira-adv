@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,7 +29,7 @@
   <!-- Cabeçalho Principal -->
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
-      <a href="index.html" class="brand" aria-label="Souza Siqueira Sociedade de Advogados — Página Inicial">
+      <a href="index.html" class="brand" aria-label="Souza Siqueira Sociedade de Advogados, Página Inicial">
         <img src="assets/images/logo.png" alt="Souza Siqueira Sociedade de Advogados" class="brand__logo" width="210" height="64">
         <span class="brand__heritage">Advogando desde 1996</span>
       </a>
@@ -223,7 +223,7 @@
             <div class="map-card">
               <div class="map-frame">
                 <iframe
-                  title="Mapa de localização — Souza Siqueira Sociedade de Advogados em Bragança Paulista"
+                  title="Mapa de localização da Souza Siqueira Sociedade de Advogados em Bragança Paulista"
                   src="https://maps.google.com/maps?q=R.+Santa+Clara,+673+-+Centro,+Bragan%C3%A7a+Paulista+-+SP,+12900-470&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -238,7 +238,7 @@
                   class="btn btn--secondary btn--sm"
                 >
                   <i data-lucide="navigation" class="icon" aria-hidden="true"></i>
-                  <span>Traçar Rota no Google Maps</span>
+                  <span>Traçar rota no Google Maps</span>
                 </a>
               </div>
             </div>
@@ -247,22 +247,19 @@
           <div class="contact-form-wrapper">
             <form class="triage-form" id="contact-form" novalidate>
               <div class="triage-form__head">
-                <h2 class="triage-form__title">Solicitar Atendimento ou Agendamento</h2>
-                <p class="triage-form__desc">
-                  Preencha os dados abaixo para estruturar seu resumo de atendimento e encaminhá-lo diretamente à nossa equipe via WhatsApp ou e-mail institucional.
-                </p>
+                <h2 class="triage-form__title">Solicitar atendimento ou agendamento</h2>
               </div>
 
               <div class="form-grid">
                 <div class="form-field form-field--full">
-                  <label for="nome" class="form-label">Nome Completo <span class="required-mark" aria-hidden="true">*</span></label>
-                  <input type="text" id="nome" name="nome" class="form-input" required autocomplete="name" placeholder="Seu nome completo">
+                  <label for="nome" class="form-label">Nome completo <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="text" id="nome" name="nome" class="form-input" required autocomplete="name">
                   <span class="form-error" id="error-nome" role="alert"></span>
                 </div>
 
                 <div class="form-field form-field--full">
-                  <label for="empresa" class="form-label">Empresa ou Organização <span class="optional-mark">(opcional)</span></label>
-                  <input type="text" id="empresa" name="empresa" class="form-input" autocomplete="organization" placeholder="Razão social ou instituição, se aplicável">
+                  <label for="empresa" class="form-label">Empresa ou organização <span class="optional-mark">(opcional)</span></label>
+                  <input type="text" id="empresa" name="empresa" class="form-input" autocomplete="organization">
                 </div>
 
                 <div class="form-field">
@@ -296,7 +293,7 @@
 
                 <div class="form-field form-field--full">
                   <label for="mensagem" class="form-label">Breve descrição da necessidade <span class="required-mark" aria-hidden="true">*</span></label>
-                  <textarea id="mensagem" name="mensagem" class="form-textarea" rows="4" required placeholder="Descreva sucintamente sua demanda jurídica ou preferência de horário para atendimento..."></textarea>
+                  <textarea id="mensagem" name="mensagem" class="form-textarea" rows="4" required></textarea>
                   <span class="form-error" id="error-mensagem" role="alert"></span>
                 </div>
               </div>
@@ -306,15 +303,13 @@
                   <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <use href="#icon-whatsapp"></use>
                   </svg>
-                  <span>Preparar e Enviar Atendimento via WhatsApp</span>
+                  <span>Preparar e enviar atendimento via WhatsApp</span>
                 </button>
               </div>
 
               <div class="form-feedback" id="form-feedback" hidden role="status" aria-live="polite">
-                <h3 class="form-feedback__title">Solicitação estruturada com sucesso</h3>
-                <p class="form-feedback__text">
-                  Sua mensagem foi preparada para o atendimento da <strong>Souza Siqueira Sociedade de Advogados</strong>. Clique abaixo para concluir o envio pelo canal de sua preferência:
-                </p>
+                <h3 class="form-feedback__title">Solicitação estruturada</h3>
+                <p class="form-feedback__text">Escolha como enviar sua solicitação:</p>
                 <div class="form-feedback__links">
                   <a href="#" id="feedback-whatsapp-link" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
                     <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -340,7 +335,7 @@
           <div class="footer-brand__emblem">
             <img src="assets/images/logo-maior.png" alt="Souza Siqueira Sociedade de Advogados" width="220" height="72">
           </div>
-          <p class="footer-brand__tagline">Advogando desde 1996 · Trinta anos de excelência jurídica em Bragança Paulista, em todo o Estado de São Paulo e principais capitais.</p>
+          <p class="footer-brand__tagline">Advogando desde 1996. Trinta anos de excelência jurídica em Bragança Paulista, em todo o Estado de São Paulo e principais capitais.</p>
           <div class="footer-social">
             <a href="https://www.instagram.com/souzasiqueiraadvogados/" target="_blank" rel="noopener noreferrer" class="footer-social__link">
               <i data-lucide="instagram" class="icon" aria-hidden="true"></i>
@@ -376,7 +371,7 @@
             <p>WhatsApp: <a href="https://wa.me/5511937137822" target="_blank" rel="noopener noreferrer">(11) 93713-7822</a></p>
             <p>E-mail: <a href="mailto:contato@souzasiqueira.com.br">contato@souzasiqueira.com.br</a></p>
           </address>
-          <p class="footer-hours">Segunda a Sexta: 08:00–18:00 · Sábado e Domingo: Fechado</p>
+          <p class="footer-hours">Segunda a Sexta: 08:00–18:00. Sábado e Domingo: Fechado</p>
         </div>
       </div>
 
